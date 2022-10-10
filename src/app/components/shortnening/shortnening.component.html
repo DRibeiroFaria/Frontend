@@ -1,0 +1,23 @@
+<div mat-dialog-content div class="div-center-align">
+    <form [formGroup]="urlForm">
+        <p>
+            <mat-form-field appearance="legacy">
+                <mat-label>Shorten your link</mat-label>
+                <input formControlName="long_url" matInput placeholder="Link">
+            </mat-form-field>
+            <button [disabled]="!urlForm.valid" class="button-default" mat-raised-button color="primary" (click)="addUrl()">Generate</button>
+
+        </p>
+        <div class="div-center-align" mat-dialog-action [align]="'left'">
+        </div>
+    </form>
+    
+</div>
+<div mat-dialog-content div class="div-center-align_copy">
+    <p>
+        <label>{{label}}</label>
+        <button mat-icon-button *ngIf="label" class="button-icon" mat-raised-button color="basic" (click)="copy(label)">
+            <mat-icon>content_copy</mat-icon>
+        </button>
+    </p>
+</div>

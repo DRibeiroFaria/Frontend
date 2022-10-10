@@ -1,0 +1,18 @@
+<mat-toolbar>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+        <mat-icon>graphic_eq</mat-icon>
+    </button>
+    <span class="span-text-color"> URL shortening service</span>
+    <span class="example-spacer"></span>
+    
+    <button mat-button *ngIf="isAuthenticated" class="button-sign-up" mat-raised-button (click)="logout()">
+        LOGOUT
+    </button>
+    
+    <button mat-button *ngIf="!isAuthenticated" class="button-sign-up" mat-raised-button (click)="openSignUp()" >
+        SIGN UP
+    </button>
+    <button mat-button *ngIf="!isAuthenticated" mat-raised-button (click)="openSignIn()">
+        SIGN IN
+    </button>
+</mat-toolbar>

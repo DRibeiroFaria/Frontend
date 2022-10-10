@@ -1,0 +1,23 @@
+
+<h2 [align]="'center'">Sign in</h2>
+<div mat-dialog-content>
+    <form [formGroup]="signForm" (ngSubmit)="signin()">
+        <p>
+            <mat-form-field appearance="legacy">
+                <mat-label>Email</mat-label>
+                <input formControlName="email" matInput>
+            </mat-form-field>
+        </p>
+        <p>
+            <mat-form-field appearance="legacy">
+                <mat-label>Password</mat-label>
+                <input type="password" formControlName="pass" matInput>
+            </mat-form-field>
+            <mat-hint>Hint: min 8</mat-hint>
+        </p>
+        <div mat-dialog-action [align]="'center'">
+            <button class="button-default" mat-raised-button mat-dialog-close color="warn">Close</button>
+            <button class="button-default" mat-raised-button color="primary" [disabled]="!signForm.valid" type="submit">Sign in</button>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,43 @@
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+mat-form-field {
+    width: 75%;
+    margin-right: 5%;
+}
+
+.div-center-align {
+    margin: auto;
+    width: 80%;
+    padding: 10px;
+    margin-top: 5%;
+}
+
+.div-center-align_copy{
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+.button-icon{
+    float: right;
+}
+
+.button-default{
+  width: 20%;
+}
+
+@media only screen and (max-width: 600px) {
+    .button-default {
+        width: 50%;
+    }
+
+    mat-form-field {
+        width: 100%;
+    }
+
+   .div-center-align_copy{
+    width: 80%;        
+   }
+}

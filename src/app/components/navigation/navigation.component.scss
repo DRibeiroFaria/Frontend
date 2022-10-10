@@ -1,0 +1,37 @@
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+mat-form-field {
+    width: 100%;
+}
+
+mat-toolbar{
+    background-color: #c9c9c9;
+}
+
+.div-center-align {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+.button-sign-up{
+margin-right: 5px;
+}
+
+.my-dialog {
+    width: 40%;
+}
+@media only screen and (max-width: 600px) {
+mat-toolbar {
+        font-size: 12px;
+    }
+
+    button{
+       font-size:12px; 
+    }
+    .my-dialog{
+        width: 100%;
+    }
+}

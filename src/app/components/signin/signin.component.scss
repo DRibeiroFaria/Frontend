@@ -1,0 +1,21 @@
+mat-form-field {
+    width: 100%;
+}
+
+.button-default {
+    width: 40%;
+    margin: 5px;
+}
+
+.my-dialog{
+    max-width: 80vw;
+        width: 30%;
+        position: static;
+}
+
+@media only screen and (max-width: 600px) {
+my-dialog {
+        width: 100%;
+        position: static;
+    }
+}
