@@ -1,5 +1,5 @@
 # Frontend
-Shortening Service Backend
+Shortening Service frontend
 
 # 1.Intall packages 
  npm i 
